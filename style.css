@@ -1,0 +1,220 @@
+
+:root{
+    --font-primary: 'lato', sans serif;
+    --font-heading: 'Poppins', sans-serif;
+    --font-emphaize: 'PT serif', serif;
+
+    --color-text: #1c263d;
+    --color-text-light: #eee;
+    --color-text-muted: #6c757d;
+    --color-text-extra-muted: #999;
+    --color-grey: #333;
+    --color-dark-bg: #00293f;
+}
+
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=PT+Sans:ital@1&family=Poppins:wght@300;700&display=swap');
+
+/* base */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--font-primary);
+    color: var(--color-text);
+    font-size: 16;
+}
+
+h1,h2,h3,h4{
+    font-family: var(--font-heading);
+    font-weight: 700;
+    color:#444;
+}
+
+/* variables */
+
+/* utils */
+.container {
+    /* border: 2px dashed black; */
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    align-items: center;
+  }
+  @media (min-width: 768px) {
+    .container {
+      width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .container {
+      width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .container {
+      width: 1100px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
+  .container-divider {
+    background: #cfd6e0;
+    height: 1px;
+    overflow: hidden;
+  }
+.btn{
+    border: 1px solid;
+    border-radius: 4px;
+    cursor:pointer;
+    font-size: 18px;
+    font-weight: 700;
+    min-height: 46px;
+    line-height: 46px;
+    padding: 0 32px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    overflow-wrap: break-word;
+}
+.btn--empty {
+    background-color: transparent;
+    color: white;
+    border-color: white;
+  }
+  
+.btn--white {
+    background: #fff;
+    color: #001927;
+}
+  
+.btn--large {
+    min-width: 320px;
+    border: 1px solid #1e7b85;
+}
+  
+.hamburger span {
+    width: 18px;
+    height: 2px;
+    /*background-color: black;*/
+    display: block;
+    margin-top: 4px;
+}
+  
+.hamburger--light span {
+    background-color: white;
+}
+  
+.hamburger--cross span:first-child {
+    transform-origin: center center;
+    transform: rotate(-45deg);
+}
+  
+.hamburger--cross span:nth-child(2) {
+    opacity: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+}
+  
+.hamburger--cross span:last-child {
+    transform-origin: center center;
+    margin-top: -8px;
+    transform: rotate(45deg);
+}
+/* Header */
+.site-header{
+    background-color: var(--color-dark-bg);
+    min-height: 52px;
+}
+.site-header__logo {
+    margin-left: 16px;
+  }
+  
+ .site-header__logo-image {
+    height: 26px;
+}
+  
+.site-header--hide {
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+  
+.site-header__signin {
+    margin-left: auto;
+}
+  
+/* sidebar */
+.sidebar {
+    position: absolute;
+    width: 300px;
+    height: 100vh;
+    background: black;
+    margin-left: -300px;
+    top: 0;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .sidebar.active {
+    margin-left: 0;
+  }
+  
+  .sidebar ul li {
+    list-style: none;
+    color: white;
+    font-size: 20px;
+    padding: 20px 24px;
+  }
+  
+  .sidebar__toggle-sidebar {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+/* hero */
+.hero {
+    height: 416px;
+    z-index: -1;
+    background-image: url(https://s-f.scribdassets.com/webpack/assets/images/hero_banner/1190_en@2x.fd85dc5e.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+  }
+  
+  .hero__container {
+    height: 100%;
+  }
+  
+  .hero__title {
+    font-family: var(--font-heading);
+    font-size: 28px;
+    color: var(--color-text-light);
+    max-width: 600px;
+    margin-bottom: 16px;
+  }
+  
+  @media (min-width: 768px) {
+    .hero__title {
+      font-size: 46px;
+    }
+  }
+  
+  .hero__subtitle {
+    font-family: var(--font-empasize);
+    font-size: 22px;
+    margin-bottom: 32px;
+  }
+  
+  .hero__under-btn {
+    margin-top: 12px;
+  }
