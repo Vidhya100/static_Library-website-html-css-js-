@@ -1,4 +1,4 @@
-
+/* variables */
 :root{
     --font-primary: 'lato', sans serif;
     --font-heading: 'Poppins', sans-serif;
@@ -33,8 +33,12 @@ h1,h2,h3,h4{
     font-weight: 700;
     color:#444;
 }
-
-/* variables */
+.section-heading{
+    font-size: 40px;
+    margin-bottom: 16px;
+    max-width:763px;
+    text-align: center;
+}
 
 /* utils */
 .container {
@@ -218,3 +222,93 @@ h1,h2,h3,h4{
   .hero__under-btn {
     margin-top: 12px;
   }
+
+  /* features*/
+.features-box__title-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.features__description{
+    font-size:120%;
+    color:var(--color-text-muted);
+    margin-bottom: 32px;
+    max-width: 763px;
+    text-align: center;
+}
+.features-box__list{
+      display:flex;
+      flex-direction: column;
+}
+@media  (min-width: 768px){
+  .features-box__list {
+    flex-direction: row;
+    padding-bottom: 7%;
+  }
+}
+.features{
+    padding: 54px 0px;
+}
+.feature-box{
+    display: flex;
+    flex-direction: column;
+    padding:16px;
+}      
+.features-box__img{
+    width:88px;
+    height:64px;
+    margin-bottom: 24px;
+}
+.features-box__img img,
+.features-box__img a {
+  width: 100%;
+  height: 100%;
+}
+.features-box__body-title {
+    font-weight: 600;
+    color: var(--color-grey);
+    text-transform: uppercase;
+    font-size: 16px;
+}  
+.features-box__body-description {
+    color: var(--color-text-extra-muted);
+    margin-top: 8px;
+}
+
+/* feature quote */
+.feature-quote{
+    background-color: #fafbfd;
+    display: flex;
+    justify-content: center;
+}
+.feature-quote__container{
+    margin:64px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.feature-quote__quote{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: initial;
+    position:relative;
+    max-width:710px;
+}
+.feature-quote__quote-para{
+    font-size:24px;
+    font-style: italic;
+    font-weight: 600;
+    max-width:588px;
+    padding-bottom:16px;
+    text-align:center;
+    font-family: var(--font-emphaize);
+}
+.feature-quote__quote-cite{
+    font-size: 18px;
+    font-style: normal;
+    font-weight:400;
+    color: var(--color-text-muted);
+}
+
+  
