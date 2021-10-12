@@ -310,5 +310,127 @@ h1,h2,h3,h4{
     font-weight:400;
     color: var(--color-text-muted);
 }
+/* Best-books */
+.best-books{
+  background-color: #003458;
+  color:#eee;
+  padding: 54px 0;
+}
+.best-books__container{
+  display: flex;
+  flex-direction: column;
+}
+.best-books__title .section-heading{ 
+  color: #eee;
+}
+.best-books__list-items{
+  display:flex;
+  flex-direction: row;
+  max-width:876px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.best-books__list-items li{
+  list-style: none;
+  height:120px;
+  width:auto;
+  margin:4px;
+}
+.best-books__list-items li img{
+  height:100%;
+  width:auto;
+}
+.best-books__list-items li a{
+  height:100%;
+  width:auto;
+}
+.best-books_free-trail{
+  margin-top: 32px;
+}
 
-  
+/* Featured data statistic */
+.data-statistic__container{
+  padding:54px 0;
+  justify-content: space-between;
+  flex-direction: column;
+  gap:32px;
+}
+@media (min-width: 768px){
+  .data-statistic__container{
+    flex-direction: row;
+    gap:auto;
+  }
+}
+.data-statistic__item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.data-statisic h4{
+  font-size:42px;
+  font-weight: 600;
+  font-family: var(--fonnt-emphasize);
+}
+.data-statisic p{
+  color:var(--color-text-extra-muted);
+  text-transform: uppercase;
+  font-size: 20px;
+}
+/*Category section*/
+.category-section{
+  background-color: #f8f9fd;
+  border-top: 1px solid #e9edf8;
+  border-bottom: 1px solid #e8edf8 ;
+}
+.category-section__container{
+  justify-content: center;
+}  
+.category-section__title .section-heading{
+  margin: 32px 0;
+}
+/* book card list*/
+.card-list-wrapper{
+  display: flex;
+  justify-content: center;
+}
+.card-list{
+  display: grid;
+  gap:20px;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  max-width:680px;
+  margin:54px 0;
+}
+
+/*card*/
+.card{
+  display:grid;
+  gap:4px 16px;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto auto auto;
+}
+.card__img{
+  height:108px;
+  width:108px;
+  object-fit: cover;
+  grid-column: 1/2;
+  grid-row: 1/4;
+}
+.card__title{
+  font-size:20px;
+  text-decoration: none;
+  font-weight: 700;
+  color:var(--color-text);
+}
+.card__description{
+  color:var(--color-text-muted);
+}
+.card__author{
+  color:var(--color-text-extra-muted);
+  text-decoration: none;
+}
+/*Book Details*/
+
+
