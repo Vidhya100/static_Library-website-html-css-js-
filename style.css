@@ -48,7 +48,6 @@ hr.line {
 
 /* utils */
 .container {
-    /* border: 2px dashed black; */
     width: 100%;
     padding-left: 15px;
     padding-right: 15px;
@@ -253,7 +252,7 @@ hr.line {
   }
 }
 .features{
-    padding: 54px 0px;
+    padding: 0px 0px;
 }
 .feature-box{
     display: flex;
@@ -527,10 +526,10 @@ hr.line {
 }
 /*footer*/
 .footer-primary {
-  padding-top: 54px;
+  padding: 54px 0;
   background-color: #f0f2f9;
   color: var(--color-grey);
-  margin-top:56px;
+  margin:54px 0;
 }
 
 .footer-primary__container {
